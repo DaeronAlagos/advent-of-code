@@ -1,0 +1,27 @@
+<form hx-post="/solve">
+    <div class="text-center">
+        <label for="day1">1</label>
+        <input id="day1" name="day" type="radio" value="1" required>
+        <label for="day2">2</label>
+        <input id="day2" name="day" type="radio" value="2" required>
+    </div>
+    <div class="text-center">Bells</div>
+    <div class="flex justify-around">
+        <div class="text-center">
+            <div>Part 1 solution</div>
+            <div>{{ part1 }}</div>
+        </div>
+        <div class="">
+            <label>
+                <textarea name="user_input" class="" placeholder="Your input" required></textarea>
+            </label>
+        </div>
+        <div class="text-center">
+            <div>Part 2 solution</div>
+            <div>{{ part2 }}</div>
+        </div>
+    </div>
+    <div class="text-center">
+        <input type="submit" value="Solve">
+    </div>
+</form>
